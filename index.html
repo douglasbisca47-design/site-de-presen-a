@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Valéria & Douglas ❤️</title>
+
+    <meta name="description" content="Site especial de Valéria & Douglas">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header class="menu">
+        <div class="logo">V & D ❤️</div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#historia">Nossa História</a>
+            <a href="#evento">Evento</a>
+            <a href="#presentes">Presentes</a>
+            <a href="#confirmar">Confirmar</a>
+        </nav>
+
+        <button class="menu-btn" onclick="abrirMenu()">☰</button>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="pequeno">COM MUITO AMOR</p>
+
+            <h1>Valéria & Douglas</h1>
+
+            <div class="coracao">♥</div>
+
+            <p class="frase">
+                Estamos vivendo um dos momentos mais especiais
+                das nossas vidas e queremos compartilhar tudo isso com você.
+            </p>
+
+            <a href="#confirmar" class="botao">
+                Confirmar presença
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTAGEM -->
+    <section class="contador-section">
+
+        <p class="pequeno">O GRANDE DIA ESTÁ CHEGANDO</p>
+
+        <h2>Contagem regressiva</h2>
+
+        <div id="contador" class="contador">
+
+            <div>
+                <strong id="dias">00</strong>
+                <span>Dias</span>
+            </div>
+
+            <div>
+                <strong id="horas">00</strong>
+                <span>Horas</span>
+            </div>
+
+            <div>
+                <strong id="minutos">00</strong>
+                <span>Minutos</span>
+            </div>
+
+            <div>
+                <strong id="segundos">00</strong>
+                <span>Segundos</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HISTÓRIA -->
+    <section id="historia" class="section historia">
+
+        <div class="imagem-historia">
+            <div class="foto-placeholder">
+                ❤️
+            </div>
+        </div>
+
+        <div class="texto-historia">
+
+            <p class="pequeno">NOSSA HISTÓRIA</p>
+
+            <h2>Uma história de amor</h2>
+
+            <p>
+                Algumas histórias começam por acaso.
+                Outras parecem ter sido escritas pelo destino.
+            </p>
+
+            <p>
+                A nossa foi construída aos poucos, com carinho,
+                companheirismo, risadas e muitos momentos que
+                guardaremos para sempre.
+            </p>
+
+            <p>
+                Agora queremos celebrar mais um capítulo dessa
+                história ao lado das pessoas que amamos.
+            </p>
+
+            <div class="assinatura">
+                Valéria & Douglas
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EVENTO -->
+    <section id="evento" class="section evento">
+
+        <p class="pequeno">ANOTE NA AGENDA</p>
+
+        <h2>Nosso evento</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="icone">📅</div>
+
+                <h3>Data</h3>
+
+                <p>
+                    23 de Agosto
+                </p>
+
+                <span>
+                    Reserve esse dia ❤️
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icone">⏰</div>
+
+                <h3>Horário</h3>
+
+                <p>
+                    A partir das 15:00
+                </p>
+
+                <span>
+                    Chegue com antecedência
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icone">📍</div>
+
+                <h3>Local</h3>
+
+                <p>
+                    Local do evento
+                </p>
+
+                <span>
+                    Curitiba - PR
+                </span>
+
+            </div>
+
+        </div>
+
+        <a
+            href="https://www.google.com/maps"
+            target="_blank"
+            class="botao botao-contorno"
+        >
+            Ver localização
+        </a>
+
+    </section>
+
+
+    <!-- PRESENTES -->
+    <section id="presentes" class="section presentes">
+
+        <p class="pequeno">COM CARINHO</p>
+
+        <h2>Lista de presentes</h2>
+
+        <p class="subtitulo">
+            Sua presença já é o nosso maior presente.
+            Mas, se quiser nos presentear, escolhemos algumas opções especiais.
+        </p>
+
+
+        <div class="presentes-grid">
+
+            <div class="presente">
+
+                <div class="presente-icon">🍳</div>
+
+                <h3>Jogo de Panelas</h3>
+
+                <p>
+                    Para ajudar a montar nossa nova cozinha.
+                </p>
+
+                <strong>R$ 299,90</strong>
+
+                <button onclick="comprar('Jogo de Panelas')">
+                    Quero presentear
+                </button>
+
+            </div>
+
+
+            <div class="presente">
+
+                <div class="presente-icon">☕</div>
+
+                <h3>Cafeteira</h3>
+
+                <p>
+                    Para começar nossas manhãs juntos.
+                </p>
+
+                <strong>R$ 249,90</strong>
+
+                <button onclick="comprar('Cafeteira')">
+                    Quero presentear
+                </button>
+
+            </div>
+
+
+            <div class="presente">
+
+                <div class="presente-icon">🍽️</div>
+
+                <h3>Jogo de Jantar</h3>
+
+                <p>
+                    Para deixar nossa casa ainda mais especial.
+                </p>
+
+                <strong>R$ 189,90</strong>
+
+                <button onclick="comprar('Jogo de Jantar')">
+                    Quero presentear
+                </button>
+
+            </div>
+
+
+            <div class="presente">
+
+                <div class="presente-icon">💝</div>
+
+                <h3>Presente Especial</h3>
+
+                <p>
+                    Você escolhe o valor que deseja presentear.
+                </p>
+
+                <strong>Você decide</strong>
+
+                <button onclick="comprar('Presente Especial')">
+                    Quero presentear
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONFIRMAÇÃO -->
+    <section id="confirmar" class="confirmacao">
+
+        <div class="confirmacao-box">
+
+            <p class="pequeno">VAMOS CELEBRAR JUNTOS?</p>
+
+            <h2>Confirme sua presença ❤️</h2>
+
+            <p>
+                A confirmação é totalmente gratuita.
+                Basta preencher seu nome e nos avisar se você estará conosco.
+            </p>
+
+
+            <form id="formPresenca">
+
+                <div class="campo">
+
+                    <label for="nome">
+                        Seu nome
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Você estará presente?
+                    </label>
+
+                    <select id="presenca" required>
+
+                        <option value="">
+                            Selecione uma opção
+                        </option>
+
+                        <option value="Sim, estarei presente!">
+                            Sim, estarei presente! ❤️
+                        </option>
+
+                        <option value="Infelizmente não poderei ir.">
+                            Infelizmente não poderei ir.
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="acompanhantes">
+                        Número de acompanhantes
+                    </label>
+
+                    <select id="acompanhantes">
+
+                        <option value="0">
+                            Nenhum
+                        </option>
+
+                        <option value="1">
+                            1 acompanhante
+                        </option>
+
+                        <option value="2">
+                            2 acompanhantes
+                        </option>
+
+                        <option value="3">
+                            3 acompanhantes
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button type="submit" class="botao">
+                    Confirmar gratuitamente
+                </button>
+
+            </form>
+
+
+            <div id="mensagemConfirmacao" class="mensagem"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <div class="footer-heart">
+            ♥
+        </div>
+
+        <h2>Valéria & Douglas</h2>
+
+        <p>
+            Feito com muito amor ❤️
+        </p>
+
+        <small>
+            © 2026 - Todos os momentos são especiais.
+        </small>
+
+    </footer>
+
+
+    <!-- BOTÃO TOPO -->
+    <button id="topo" onclick="voltarTopo()">
+        ↑
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
