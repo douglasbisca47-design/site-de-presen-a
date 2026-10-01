@@ -1,0 +1,749 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #3b3032;
+    background: #fffaf8;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: rgba(255,255,255,0.95);
+
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 32px;
+}
+
+.menu nav {
+    display: flex;
+    gap: 30px;
+}
+
+.menu nav a {
+    color: #3b3032;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu nav a:hover {
+    color: #b86b78;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 28px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    height: 100vh;
+    min-height: 650px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(60,35,40,0.35),
+            rgba(60,35,40,0.45)
+        ),
+        url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=2000&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    color: white;
+
+    max-width: 800px;
+
+    padding: 20px;
+}
+
+.pequeno {
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(70px, 10vw, 130px);
+    font-weight: 400;
+}
+
+.coracao {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.frase {
+    max-width: 650px;
+    margin: 20px auto 35px;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.botao {
+    display: inline-block;
+
+    border: none;
+
+    padding: 15px 32px;
+
+    border-radius: 50px;
+
+    background: #b86b78;
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: 0 8px 20px rgba(184,107,120,0.25);
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+    background: #a85b69;
+    color: white;
+}
+
+.botao-contorno {
+    background: transparent;
+    border: 1px solid #b86b78;
+    color: #b86b78;
+    box-shadow: none;
+}
+
+.botao-contorno:hover {
+    color: white;
+}
+
+
+/* =========================
+   CONTADOR
+========================= */
+
+.contador-section {
+    text-align: center;
+
+    padding: 90px 20px;
+
+    background: #fff;
+}
+
+.contador-section .pequeno {
+    color: #b86b78;
+}
+
+.contador-section h2,
+.section h2,
+.confirmacao h2 {
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 60px;
+
+    font-weight: 400;
+
+    margin-bottom: 40px;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.contador div {
+    width: 120px;
+
+    padding: 25px 10px;
+
+    border-radius: 15px;
+
+    background: #fff7f5;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.contador strong {
+    display: block;
+
+    font-size: 38px;
+
+    color: #b86b78;
+}
+
+.contador span {
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.section {
+    padding: 100px 8%;
+
+    text-align: center;
+}
+
+.historia {
+    display: flex;
+    align-items: center;
+
+    gap: 80px;
+
+    text-align: left;
+
+    background: #fff7f5;
+}
+
+.imagem-historia {
+    flex: 1;
+}
+
+.foto-placeholder {
+    height: 500px;
+
+    border-radius: 200px 200px 20px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 100px;
+
+    background:
+        linear-gradient(
+            rgba(184,107,120,0.25),
+            rgba(184,107,120,0.45)
+        ),
+        url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.texto-historia {
+    flex: 1;
+}
+
+.texto-historia .pequeno {
+    color: #b86b78;
+}
+
+.texto-historia h2 {
+    margin-bottom: 25px;
+}
+
+.texto-historia p {
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.assinatura {
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 40px;
+
+    color: #b86b78;
+
+    margin-top: 30px;
+}
+
+
+/* =========================
+   EVENTO
+========================= */
+
+.evento {
+    background: white;
+}
+
+.evento .pequeno,
+.presentes .pequeno {
+    color: #b86b78;
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1000px;
+
+    margin: 0 auto 40px;
+}
+
+.card {
+    padding: 40px 25px;
+
+    background: #fffaf8;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.icone {
+    font-size: 40px;
+
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+.card span {
+    font-size: 13px;
+
+    color: #777;
+}
+
+
+/* =========================
+   PRESENTES
+========================= */
+
+.presentes {
+    background: #fff7f5;
+}
+
+.subtitulo {
+    max-width: 700px;
+
+    margin: -20px auto 50px;
+
+    line-height: 1.8;
+}
+
+.presentes-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.presente {
+    background: white;
+
+    padding: 35px 20px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+
+    transition: 0.3s;
+}
+
+.presente:hover {
+    transform: translateY(-8px);
+}
+
+.presente-icon {
+    font-size: 50px;
+
+    margin-bottom: 20px;
+}
+
+.presente h3 {
+    margin-bottom: 15px;
+}
+
+.presente p {
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #777;
+
+    min-height: 65px;
+}
+
+.presente strong {
+    display: block;
+
+    margin: 20px 0;
+
+    color: #b86b78;
+}
+
+.presente button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #b86b78;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   CONFIRMAÇÃO
+========================= */
+
+.confirmacao {
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            rgba(70,40,45,0.90),
+            rgba(70,40,45,0.90)
+        ),
+        url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=80");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.confirmacao-box {
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    background: white;
+
+    text-align: center;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.confirmacao h2 {
+    color: #3b3032;
+
+    margin-bottom: 15px;
+}
+
+.confirmacao-box > p {
+    line-height: 1.7;
+
+    color: #777;
+
+    margin-bottom: 30px;
+}
+
+.campo {
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+
+    outline: none;
+}
+
+.campo input:focus,
+.campo select:focus {
+    border-color: #b86b78;
+}
+
+.confirmacao .botao {
+    width: 100%;
+}
+
+.mensagem {
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background: #fff1f3;
+
+    color: #8d4655;
+
+    display: none;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background: #302629;
+
+    color: white;
+}
+
+.footer-heart {
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+footer h2 {
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 45px;
+
+    font-weight: 400;
+}
+
+footer p {
+    margin: 15px 0;
+
+    color: #ddd;
+}
+
+footer small {
+    color: #999;
+}
+
+
+/* =========================
+   BOTÃO TOPO
+========================= */
+
+#topo {
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #b86b78;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    display: none;
+
+    z-index: 500;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+
+    .menu nav {
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+
+        left: 0;
+
+        width: 100%;
+
+        padding: 25px;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        background: white;
+
+        box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    }
+
+    .menu nav.ativo {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .historia {
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+    .foto-placeholder {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .presentes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 700px;
+    }
+
+    .hero h1 {
+        font-size: 70px;
+    }
+
+    .contador {
+        gap: 8px;
+    }
+
+    .contador div {
+        width: 75px;
+
+        padding: 18px 5px;
+    }
+
+    .contador strong {
+        font-size: 25px;
+    }
+
+    .contador span {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .section {
+        padding: 70px 20px;
+    }
+
+    .section h2,
+    .contador-section h2,
+    .confirmacao h2 {
+        font-size: 48px;
+    }
+
+    .presentes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .confirmacao-box {
+        padding: 30px 20px;
+    }
+
+    .foto-placeholder {
+        height: 400px;
+    }
+}
